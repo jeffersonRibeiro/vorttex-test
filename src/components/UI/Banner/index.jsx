@@ -1,7 +1,30 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import Icon from '../Icon';
 
-const banner = () => (
-  <div>Banner aqui</div>
+const Banner = props => (
+  <div>
+    <img src={props.bg} alt={props.title} />
+    <section>
+      <h1>{props.title}</h1>
+      <h2>{props.subtitle}</h2>
+      <a href={props.link}>Leia mais <Icon classes="fa-chevron-right" /></a>
+    </section>
+  </div>
 );
 
-export default banner;
+
+Banner.propTypes = {
+  bg: PropTypes.string.isRequired,
+  title: PropTypes.string,
+  subtitle: PropTypes.string,
+  link: PropTypes.string,
+};
+
+Banner.defaultProps = {
+  title: '',
+  subtitle: '',
+  link: '',
+};
+
+export default Banner;
