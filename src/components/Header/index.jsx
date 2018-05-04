@@ -10,9 +10,9 @@ import Clearfix from '../UI/Clearfix';
 const header = () => (
   <header className="row">
     <a className="logo" href="#/">Logo</a>
-    <nav><NavigationItems /></nav>
-    <Search />
     <LanguageSelect />
+    <Search />
+    <nav><NavigationItems /></nav>
     <Clearfix />
   </header>
 );

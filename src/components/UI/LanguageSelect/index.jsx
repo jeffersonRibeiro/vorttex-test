@@ -1,14 +1,17 @@
 import React from 'react';
 
+import './style.scss';
+
 import Icon from '../Icon';
 
+
 const languages = [
-  { link: '#pt', label: 'PT' },
-  { link: '#es', label: 'ES' },
-  { link: '#us', label: 'US' },
+  { label: 'PT' },
+  { label: 'ES' },
+  { label: 'US' },
 ];
 
-const buildLanguages = () => languages.map(l => <p><a href={l.link}>{l.label}</a></p>);
+const buildLanguages = () => languages.map(l => <p className="language-item">{l.label}</p>);
 
 const languageSelect = () => (
   <div className="language-container">

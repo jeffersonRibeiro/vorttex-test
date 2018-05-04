@@ -1,0 +1,21 @@
+.language-container {
+  position: relative;
+  width: 80px;
+  line-height: 56px;
+  text-align: center;
+  background-color: yellow;
+
+  .language-options {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    background-color: grey;
+    z-index: 100;
+
+    .language-item {
+      margin: 0;
+      line-height: initial;
+      padding: 10px 0px;
+    }
+  }
+}
