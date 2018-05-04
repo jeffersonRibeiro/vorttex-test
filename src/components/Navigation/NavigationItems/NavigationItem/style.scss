@@ -1,0 +1,18 @@
+.navigation-item {
+  margin: 0;
+  display: inline-block;
+  text-align: center;
+  line-height: 56px;
+  padding: 0 20px;
+
+  a {
+    color: white;
+    text-decoration: none;
+
+    &:hover,
+    &:active,
+    &.active {
+      color: rgba(255,255,255,0.8);
+    }
+  }
+}

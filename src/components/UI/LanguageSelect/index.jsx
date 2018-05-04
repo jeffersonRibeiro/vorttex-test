@@ -11,7 +11,7 @@ const languages = [
 const buildLanguages = () => languages.map(l => <p><a href={l.link}>{l.label}</a></p>);
 
 const languageSelect = () => (
-  <div className="language">
+  <div className="language-container">
     <div className="language-selected">PT <Icon classes="fa-chevron-down" /></div>
     <div className="language-options">
       {buildLanguages()}

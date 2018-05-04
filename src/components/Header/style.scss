@@ -1,0 +1,27 @@
+header {
+  height: 56px;
+  width: 100%;
+  background-color: #703b09;
+  // display: flex;
+  // justify-content: space-between;
+  // align-items: center;
+  padding: 0 20px;
+
+  .logo {
+    height: 80%;
+    float: left;
+  }
+
+  nav,
+  .search-container,
+  .language-container {
+    float: right;
+  }
+
+}
+
+@media (max-width: 499px) {
+  .desktop-only {
+    display: none;
+  }
+}
