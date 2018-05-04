@@ -2,7 +2,7 @@ import React from 'react';
 
 import './style.scss';
 
-import Icon from '../Icon';
+import Icon from '../../UI/Icon';
 
 
 const languages = [
@@ -13,7 +13,7 @@ const languages = [
 
 const buildLanguages = () => languages.map(l => <p className="language-item">{l.label}</p>);
 
-const languageSelect = () => (
+const LanguageSelect = () => (
   <div className="language-container">
     <div className="language-selected">PT <Icon classes="fa-fw fa-chevron-down" /></div>
     <div className="language-options">
@@ -22,4 +22,4 @@ const languageSelect = () => (
   </div>
 );
 
-export default languageSelect;
+export default LanguageSelect;

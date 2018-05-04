@@ -1,8 +1,13 @@
 import React from 'react';
-// import fa from 'font-awesome/css/font-awesome.min.css';
+import PropTypes from 'prop-types';
 
-const icon = ({ classes } = this.props) => (
-  <i className={['fa', classes].join(' ')} />
+const Icon = props => (
+  <i className={['fa', props.classes].join(' ')} />
 );
 
-export default icon;
+Icon.propTypes = {
+  classes: PropTypes.string.isRequired,
+};
+
+
+export default Icon;

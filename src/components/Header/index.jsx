@@ -3,13 +3,14 @@ import React from 'react';
 import './style.scss';
 
 import NavigationItems from '../Navigation/NavigationItems';
-import Search from '../UI/Search';
-import LanguageSelect from '../UI/LanguageSelect';
+import Search from './Search';
+import LanguageSelect from './LanguageSelect';
 import Clearfix from '../UI/Clearfix';
+import Logo from '../UI/Logo';
 
-const header = () => (
-  <header className="row">
-    <a className="logo" href="#/">Logo</a>
+const Header = () => (
+  <header>
+    <Logo />
     <LanguageSelect />
     <Search />
     <nav><NavigationItems /></nav>
@@ -17,4 +18,4 @@ const header = () => (
   </header>
 );
 
-export default header;
+export default Header;

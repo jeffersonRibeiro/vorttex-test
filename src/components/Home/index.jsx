@@ -3,7 +3,7 @@ import Slider from 'react-slick';
 
 import Banner from '../UI/Banner';
 
-const homePage = () => {
+const HomePage = () => {
   const settings = {
     dots: true,
     infinite: true,
@@ -23,4 +23,4 @@ const homePage = () => {
   );
 };
 
-export default homePage;
+export default HomePage;
