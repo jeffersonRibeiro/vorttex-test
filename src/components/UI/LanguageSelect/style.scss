@@ -3,19 +3,35 @@
   width: 80px;
   line-height: 56px;
   text-align: center;
-  background-color: yellow;
+  color: #fff;
+
+  &:hover {
+    > .language-options {
+      display: block;
+    }
+  }
+
+
+  .language-selected {
+  }
 
   .language-options {
     position: absolute;
     width: 100%;
     text-align: center;
-    background-color: grey;
+    background-color: #c0392b;
     z-index: 100;
+    display: none;
 
     .language-item {
       margin: 0;
       line-height: initial;
       padding: 10px 0px;
+      cursor: default;
+
+      &:hover {
+        background-color: #e74c3c;
+      }
     }
   }
 }

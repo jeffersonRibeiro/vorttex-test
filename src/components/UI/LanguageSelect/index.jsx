@@ -15,7 +15,7 @@ const buildLanguages = () => languages.map(l => <p className="language-item">{l.
 
 const languageSelect = () => (
   <div className="language-container">
-    <div className="language-selected">PT <Icon classes="fa-chevron-down" /></div>
+    <div className="language-selected">PT <Icon classes="fa-fw fa-chevron-down" /></div>
     <div className="language-options">
       {buildLanguages()}
     </div>
