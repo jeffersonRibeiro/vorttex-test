@@ -5,21 +5,18 @@ import './style.scss';
 import NavigationItems from '../Navigation/NavigationItems';
 import Logo from '../UI/Logo';
 import CenterAll from '../UI/CenterAll';
+import Copyright from './Copyright';
+import Address from './Address';
 
 const Footer = () => (
   <footer>
     <CenterAll>
       <div className="cf additional-info">
         <Logo classes="pull-left" />
-        <p className="address pull-right">
-          Av. Jõao da Silva 2055 <br />
-          15 andar, Jardim Paulistano <br />
-          São Paulo - Sp | Brasil <br />
-          CEP 01452-001 <br />
-        </p>
+        <Address classes="pull-right"/>
       </div>
       <div className="cf signature">
-        <p className="copyright pull-left">@ Logo 2018 VORTTEX CO</p>
+        <Copyright classes="pull-left" />
         <nav className="pull-right"><NavigationItems /></nav>
       </div>
     </CenterAll>
