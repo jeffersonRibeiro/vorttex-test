@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Icon from '../Icon';
+import CallToAction from '../CallToAction';
 
 const Banner = props => (
   <React.Fragment>
@@ -8,7 +8,7 @@ const Banner = props => (
     <section>
       <h1 className="title">{props.title}</h1>
       <h2 className="subtitle">{props.subtitle}</h2>
-      <a className="link" href={props.link}>Leia mais <Icon classes="fa-chevron-right" /></a>
+      <CallToAction link={props.link} />
     </section>
   </React.Fragment>
 );
