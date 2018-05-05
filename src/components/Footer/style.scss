@@ -1,0 +1,26 @@
+footer {
+  width: 100%;
+  padding: 40px 0;
+  background-color: #862038;
+  color: rgba(255, 255, 255, 0.8);
+
+  .logo {
+    font-size: 2.5rem;
+    padding: 30px;
+  }
+
+  .address {
+    text-align: right;
+  }
+
+  .signature {
+    margin-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.8);
+
+    .copyright {
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+  }
+
+}

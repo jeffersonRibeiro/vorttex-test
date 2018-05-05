@@ -5,6 +5,7 @@ import { createBrowserHistory } from 'history';
 import { ConnectedRouter } from 'react-router-redux';
 import 'styles/global.scss';
 import Header from './components/Header';
+import Footer from './components/Footer';
 import getRoutes from './routes';
 import store from './store';
 
@@ -19,6 +20,7 @@ const App = () => (
           <div className="content">
             { getRoutes(store) }
           </div>
+          <Footer />
         </div>
       </HashRouter>
     </ConnectedRouter>

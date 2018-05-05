@@ -5,7 +5,6 @@ import './style.scss';
 import NavigationItems from '../Navigation/NavigationItems';
 import Search from './Search';
 import LanguageSelect from './LanguageSelect';
-import Clearfix from '../UI/Clearfix';
 import Logo from '../UI/Logo';
 import CenterAll from '../UI/CenterAll';
 
