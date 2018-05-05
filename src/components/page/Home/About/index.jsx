@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ArticleSection from '../ActicleSection';
+import ArticleSection from '../../../UI/ActicleSection';
 import ServiceItems from './ServiceItems';
 
 

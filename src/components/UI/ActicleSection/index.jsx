@@ -1,6 +1,6 @@
 import React from 'react';
 
-import CenterAll from '../../../UI/CenterAll';
+import CenterAll from '../CenterAll';
 
 // import './style.scss';
 

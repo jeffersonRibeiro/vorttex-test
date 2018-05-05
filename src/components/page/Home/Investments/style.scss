@@ -1,0 +1,39 @@
+.investments.article {
+  padding: 80px 0;
+  color: #fff;
+  font-size: 2rem;
+
+  section {
+    width: 50%;
+  }
+
+  .pull-left {
+    z-index: -1;
+
+    img {
+      width: 140%;
+      float: left;
+    }
+  }
+
+
+  .pull-right {
+    position: relative;
+    padding: 50px 70px;
+    margin-top: 80px;
+    background-color: rgba(152,43,69, 0.93);
+
+    &::before {
+      content: '';
+      width: 70px;
+      height: 4px;
+      background-color: #fff;
+      display: block;
+      position: absolute;
+      top: 55px;
+    }
+  }
+
+}
+
+
