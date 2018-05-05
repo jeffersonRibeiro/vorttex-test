@@ -1,7 +1,7 @@
 import React from 'react';
 import Slider from 'react-slick';
 
-import Banner from '../../UI/Banner';
+import Banner from '../../../UI/Banner';
 
 import './style.scss';
 
@@ -14,7 +14,6 @@ const settings = {
 };
 
 const MainBanner = (props) => {
-  console.log(props);
   const bannerList = props.banners.map(b => <Banner key={b.url} bg={b.url} title={b.title} subtitle={b.subtitle} link={b.link} />);
 
   return (
