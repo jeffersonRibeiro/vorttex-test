@@ -1,26 +1,11 @@
 import React from 'react';
-import Slider from 'react-slick';
 
-import Banner from '../UI/Banner';
+import MainBanner from './MainBanner';
 
-const HomePage = () => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
-
-  return (
-    <div>
-      <Slider {...settings}>
-        <Banner bg="img.png" title="Título aqui" subtitle="Lorem ipsum dolor bla bla bla" link="#link1" />
-        <Banner bg="img.png" title="Título aqui 2" subtitle="Lorem ipsum dolor bla bla bla" link="#link2 " />
-        <Banner bg="img.png" title="Título aqui 3" subtitle="Lorem ipsum dolor bla bla bla" link="#link3" />
-      </Slider>
-    </div>
-  );
-};
+const HomePage = props => (
+  <div>
+    <MainBanner banners={props.banners} />
+  </div>
+);
 
 export default HomePage;

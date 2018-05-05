@@ -7,14 +7,16 @@ import Search from './Search';
 import LanguageSelect from './LanguageSelect';
 import Clearfix from '../UI/Clearfix';
 import Logo from '../UI/Logo';
+import CenterAll from '../UI/CenterAll';
 
 const Header = () => (
-  <header>
-    <Logo />
-    <LanguageSelect />
-    <Search />
-    <nav><NavigationItems /></nav>
-    <Clearfix />
+  <header className="cf">
+    <CenterAll clearfix>
+      <Logo />
+      <LanguageSelect />
+      <Search />
+      <nav><NavigationItems /></nav>
+    </CenterAll>
   </header>
 );
 

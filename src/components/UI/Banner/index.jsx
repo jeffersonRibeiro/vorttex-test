@@ -3,14 +3,14 @@ import PropTypes from 'prop-types';
 import Icon from '../Icon';
 
 const Banner = props => (
-  <div>
+  <React.Fragment>
     <img src={props.bg} alt={props.title} />
     <section>
-      <h1>{props.title}</h1>
-      <h2>{props.subtitle}</h2>
-      <a href={props.link}>Leia mais <Icon classes="fa-chevron-right" /></a>
+      <h1 className="title">{props.title}</h1>
+      <h2 className="subtitle">{props.subtitle}</h2>
+      <a className="link" href={props.link}>Leia mais <Icon classes="fa-chevron-right" /></a>
     </section>
-  </div>
+  </React.Fragment>
 );
 
 
