@@ -1,31 +1,32 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import fetchBanners from './actions';
 
-import Home from '../../components/Page/Home';
-
-import request from '../../utils/request';
+import Home from '../../components/page/Home';
 
 
 class HomePage extends Component {
-  state = {
-    banners: [],
-  }
-
   componentDidMount() {
-    request('http://localhost:8001/api/banners/').then((res) => {
-      console.log(res);
-      this.setState({ banners: res.banners });
-    });
-
+    this.props.fetchBanners();
   }
 
   render() {
     return (
       <Home
-        banners={this.state.banners}
+        banners={this.props.banners}
       />
     );
   }
 }
 
+HomePage.propTypes = {
+  fetchBanners: PropTypes.func.isRequired,
+  banners: PropTypes.arrayOf(PropTypes.object).isRequired,
+};
 
-export default HomePage;
+const mapStateToProps = state => ({
+  banners: state.banners.items,
+});
+
+export default connect(mapStateToProps, { fetchBanners })(HomePage);

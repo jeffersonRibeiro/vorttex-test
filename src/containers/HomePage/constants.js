@@ -1,1 +1,1 @@
-export const LOAD_HOME = 'containers/HomePage/LOAD_HOME';
+export const FETCH_BANNERS = 'FETCH_PRODUCTS';

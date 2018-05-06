@@ -1,11 +1,7 @@
 import { combineReducers } from 'redux';
-import { routerReducer } from 'react-router-redux';
+import bannerReducer from '../containers/HomePage/reducer';
 
-import homePageReducer from '../containers/HomePage/reducer';
 
-const reducers = combineReducers({
-  routerReducer,
-  homePageReducer,
+export default combineReducers({
+  banners: bannerReducer,
 });
-
-export default reducers;
