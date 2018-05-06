@@ -13,6 +13,8 @@ const settings = {
   speed: 500,
   slidesToShow: 1,
   slidesToScroll: 1,
+  adaptiveHeight: true,
+  autoplay: true,
 };
 
 class MainBanner extends Component {

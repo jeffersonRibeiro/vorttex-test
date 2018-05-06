@@ -14,7 +14,7 @@ const ServiceItems = () => (
       subtitle="Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eum dolorem atque odio tenetur ad at."
     />
     <ServiceItem
-      title="Real state"
+      title="Real estate"
       subtitle="Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eum dolorem atque odio tenetur ad at."
     />
     <ServiceItem
