@@ -6,10 +6,7 @@ import Icon from '../../UI/Icon';
 const Search = () => (
   <form className="search-container">
     {/* <input type="text" /> */}
-    <a href="#/search">
-      <button className="search-submit" type="submit"><Icon classes="fa-search" />
-      </button>
-    </a>
+    <button className="search-submit" type="submit"><Icon classes="fa-search" /></button>
   </form>
 );
 
