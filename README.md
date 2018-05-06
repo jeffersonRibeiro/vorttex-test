@@ -1,4 +1,4 @@
-## Ecommerce basic functionalities built in React Redux
+## Vorttex test - React Website
 <p align="center">
   <br/>
   <img src="./doc/img/vorttex.gif">
