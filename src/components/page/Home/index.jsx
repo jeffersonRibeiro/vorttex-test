@@ -6,12 +6,12 @@ import Investments from './Investments';
 import Institute from './Institute';
 
 const HomePage = () => (
-  <div>
+  <React.Fragment>
     <MainBanner />
     <About />
     <Investments />
     <Institute />
-  </div>
+  </React.Fragment>
 );
 
 export default HomePage;

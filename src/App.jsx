@@ -15,13 +15,13 @@ const App = () => (
   <Provider store={store}>
     <ConnectedRouter history={history}>
       <HashRouter>
-        <div>
+        <React.Fragment>
           <Header />
-          <div className="content">
+          <main className="content">
             { getRoutes(store) }
-          </div>
+          </main>
           <Footer />
-        </div>
+        </React.Fragment>
       </HashRouter>
     </ConnectedRouter>
   </Provider>

@@ -10,10 +10,12 @@ import CenterAll from '../UI/CenterAll';
 const Header = () => (
   <header className="cf">
     <CenterAll clearfix>
-      <Logo />
-      <LanguageSelect />
-      <Search />
-      <nav><NavigationItems /></nav>
+      <Logo classes="pull-left" />
+      <div className="pull-right">
+        <nav><NavigationItems /></nav>
+        <Search />
+        <LanguageSelect />
+      </div>
     </CenterAll>
   </header>
 );
