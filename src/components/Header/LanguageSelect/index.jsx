@@ -6,6 +6,7 @@ import Icon from '../../UI/Icon';
 
 
 const languages = [
+  { label: 'PT' },
   { label: 'ES' },
   { label: 'US' },
 ];

@@ -17,7 +17,7 @@ const loadHomeLogic = createLogic({
         Accept: 'application/json',
       },
     }).then((success) => {
-      console.log(success);
+      console.log('ola', success);
     }).catch((error) => {
       console.log(error);
     }).then(done);
