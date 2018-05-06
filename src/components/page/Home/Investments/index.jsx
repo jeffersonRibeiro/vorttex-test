@@ -1,7 +1,6 @@
 import React from 'react';
 
 import ArticleSection from '../../../UI/ActicleSection';
-
 import CallToAction from '../../../UI/CallToAction';
 
 import './style.scss';
