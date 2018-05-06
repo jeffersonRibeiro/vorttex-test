@@ -4,6 +4,8 @@ import './style.scss';
 import ArticleSection from '../../../UI/ActicleSection';
 import CallToAction from '../../../UI/CallToAction';
 
+import background from './img/institute.jpg';
+
 const Institute = () => (
   <ArticleSection classes="institute">
     <section className="pull-left">
@@ -15,7 +17,7 @@ const Institute = () => (
       <CallToAction link="#/institute" />
     </section>
     <section className="pull-right">
-      <img src="http://localhost:8001/images/institute.jpg" alt="institute" />
+      <img src={background} alt="institute" />
     </section>
   </ArticleSection>
 );

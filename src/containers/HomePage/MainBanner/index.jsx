@@ -19,13 +19,18 @@ class MainBanner extends Component {
   componentDidMount() {
     this.props.fetchBanners();
   }
+
   render() {
     const bannerList = this.props.banners.map(b => <Banner key={b.url} bg={b.url} title={b.title} subtitle={b.subtitle} link={b.link} />);
 
     return (
-      <Slider {...settings}>
-        {bannerList}
-      </Slider>
+      <React.Fragment>
+        {bannerList.length !== 0 &&
+          <Slider {...settings}>
+            {bannerList}
+          </Slider>
+        }
+      </React.Fragment>
     );
   }
 }
