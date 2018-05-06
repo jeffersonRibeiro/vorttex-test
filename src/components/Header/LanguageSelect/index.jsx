@@ -1,9 +1,7 @@
 import React from 'react';
-
 import './style.scss';
 
 import Icon from '../../UI/Icon';
-
 
 const languages = [
   { label: 'PT' },

@@ -1,9 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Slider from 'react-slick';
+import './style.scss';
 
 import Banner from '../../../UI/Banner';
-
-import './style.scss';
 
 const settings = {
   dots: true,
@@ -21,6 +21,10 @@ const MainBanner = (props) => {
       {bannerList}
     </Slider>
   );
+};
+
+MainBanner.propTypes = {
+  banners: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
 export default MainBanner;

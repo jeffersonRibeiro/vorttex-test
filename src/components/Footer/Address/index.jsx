@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const Address = props => (
   <p className={['address', props.classes].join(' ')}>
@@ -7,6 +8,14 @@ const Address = props => (
     São Paulo - Sp | Brasil <br />
     CEP 01452-001 <br />
   </p>
-)
+);
+
+Address.propTypes = {
+  classes: PropTypes.string,
+};
+
+Address.defaultProps = {
+  classes: '',
+};
 
 export default Address;

@@ -1,7 +1,4 @@
 import React from 'react';
-
-import CenterAll from '../../../../UI/CenterAll';
-
 import './style.scss';
 
 import ServiceItem from './ServiceItem';

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Search from '../../components/Page/Search';
+import Search from '../../components/page/Search';
 
 
 class SearchPage extends React.Component {

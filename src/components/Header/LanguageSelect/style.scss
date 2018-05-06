@@ -6,20 +6,6 @@
   font-weight: 100;
   color: #fff;
 
-  &:hover {
-    > .language-options {
-      display: block;
-    }
-    > .language-selected {
-      background-color: #982b45;
-    }
-  }
-
-
-  .language-selected {
-
-  }
-
   .language-options {
     position: absolute;
     width: 100%;
@@ -31,12 +17,22 @@
     .language-item {
       margin: 0;
       line-height: initial;
-      padding: 10px 0px;
+      padding: 10px 0;
       cursor: default;
 
       &:hover {
         background-color: #111;
       }
+    }
+  }
+
+  &:hover {
+    > .language-options {
+      display: block;
+    }
+
+    > .language-selected {
+      background-color: #982b45;
     }
   }
 }

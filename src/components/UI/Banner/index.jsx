@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+
 import CallToAction from '../CallToAction';
 
 const Banner = props => (
@@ -12,7 +13,6 @@ const Banner = props => (
     </section>
   </React.Fragment>
 );
-
 
 Banner.propTypes = {
   bg: PropTypes.string.isRequired,

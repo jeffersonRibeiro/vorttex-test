@@ -9,5 +9,4 @@ Icon.propTypes = {
   classes: PropTypes.string.isRequired,
 };
 
-
 export default Icon;

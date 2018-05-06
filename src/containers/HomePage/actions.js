@@ -5,8 +5,8 @@ import request from '../../utils/request';
 const bannersAPI = 'http://localhost:8001/api/banners/';
 
 const fetchBanners = () => (dispatch) => {
-  request(bannersAPI).then((res) => {
-    const { banners } = res;
+  request(bannersAPI).then((response) => {
+    const { banners } = response;
 
     return dispatch({
       type: FETCH_BANNERS,

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import MainBanner from './MainBanner';
 import About from './About';
@@ -13,5 +14,9 @@ const HomePage = props => (
     <Institute />
   </div>
 );
+
+HomePage.propTypes = {
+  banners: PropTypes.arrayOf(PropTypes.object).isRequired,
+};
 
 export default HomePage;
