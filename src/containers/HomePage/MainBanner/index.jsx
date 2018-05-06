@@ -15,6 +15,7 @@ const settings = {
   slidesToScroll: 1,
   adaptiveHeight: true,
   autoplay: true,
+  useTransform: false,
 };
 
 class MainBanner extends Component {
