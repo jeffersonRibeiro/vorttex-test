@@ -2,7 +2,9 @@ html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -20,14 +22,14 @@ body {
 * 2. The use of `table` rather than `block` is only necessary if using
 *    `:before` to contain the top-margins of child elements.
 */
-.cf:before,
-.cf:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+.cf::before,
+.cf::after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
 }
 
-.cf:after {
-    clear: both;
+.cf::after {
+  clear: both;
 }
 
 /**
@@ -35,7 +37,7 @@ body {
 * Include this rule to trigger hasLayout and contain floats.
 */
 .cf {
-    *zoom: 1;
+  *zoom: 1;
 }
 
 .pull-left {
