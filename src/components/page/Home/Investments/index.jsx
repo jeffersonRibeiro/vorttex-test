@@ -1,9 +1,8 @@
 import React from 'react';
+import './style.scss';
 
 import ArticleSection from '../../../UI/ActicleSection';
 import CallToAction from '../../../UI/CallToAction';
-
-import './style.scss';
 
 const Investments = () => (
   <ArticleSection classes="investments">
